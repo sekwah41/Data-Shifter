@@ -1,0 +1,22 @@
+main: com.sekwah.datashifter.DataShifter
+name: DataShifter
+version: 0.0.1
+author: sekwah41
+description: Change data for all sorts in minecraft
+commands:
+    datashifter:
+        description: The main command for Data Shifter
+        aliases: [shifter,data,ds]
+        usage: /<command>
+permissions:
+    datashifter.*:
+        description: Gives access to all data commands
+        children:
+            datashifter.armourstand: true
+            datashifter.entities: true
+    datashifter.entities:
+        description: Allows you to edit entity data
+        default: op
+    datashifter.armourstand:
+        description: Allows you to edit armour stand data
+        default: op
